@@ -1,2 +1,5 @@
 export * from './NavBar'
 export * from './Footer'
+export * from './HeroLeftHalf'
+export * from './SecSectionLeft'
+export * from './SecSectionRight'

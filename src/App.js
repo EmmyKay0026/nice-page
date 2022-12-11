@@ -1,15 +1,12 @@
 import './App.css';
-import { PageTemplate } from './components/templates/PageTemplate';
+import { NicePage } from './components'
+
 
 function App() {
   return (
     
    <>
-      <PageTemplate>
-
-
-      </PageTemplate>
-
+      <NicePage />
    </>
   );
 }
