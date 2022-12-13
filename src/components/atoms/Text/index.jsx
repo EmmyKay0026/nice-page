@@ -12,6 +12,9 @@ export const Text = ({ type, children, className }) => {
   if (type === "h2") {
     return <h2 className={className}>{children}</h2>;
   }
+  if (type === "h3") {
+    return <h3 className={className}>{children}</h3>;
+  }
 
   return <span className={className}>{children}</span>;
 };

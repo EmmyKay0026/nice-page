@@ -1,11 +1,15 @@
 import React from 'react'
-import { Cta } from '../Cta'
+import { Text, Button} from '../../atoms'
 
 export const SecSectionLeft = () => {
   return (
     <div>
-      <Cta children='Hosting solution with benefits.' childrenp='Turn your ideas into reality with Static.
-With a lot of powerful features, we guarantee simplicity and clarity.' childrenbtn='read more' />
+      <Text type='h2' className='cta-h2-txt'>Hosting solution with benefits.</Text>
+      <Text type='p' className='cta-p-txt'>Turn your ideas into reality with Static.</Text>
+      <Text type='p' className='cta-p-txt'>With a lot of powerful features, we guarantee simplicity and clarity.</Text>
+      <div className='btn-cont'>
+        <Button className='cta-green-btn'>read more</Button>
+      </div>
     </div>
   )
 }
