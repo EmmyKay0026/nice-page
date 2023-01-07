@@ -1,2 +1,6 @@
 export * from './HeroSection'
 export * from './SecSection'
+export * from './ThrdSection'
+export * from './Subscribe'
+export * from './Testimonial'
+export * from './ContactSec'

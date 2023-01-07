@@ -1,15 +1,15 @@
 import React from "react";
 
 export const Input = ({ label, onChange, type, className, placeholder }) => {
-  if (type === "search") {
+  if (type === "textarea") {
     return (
       <label htmlFor={label}>
-        {label}
         <input
           id={label}
-          type="search"
+          type="textarea"
           className={className}
           onChange={onChange}
+          placeholder={placeholder}
         />
       </label>
     );
@@ -18,7 +18,6 @@ export const Input = ({ label, onChange, type, className, placeholder }) => {
   if (type === "password") {
     return (
       <label htmlFor={label}>
-        {label}
         <input
           id={label}
           type="password"
@@ -55,15 +54,19 @@ export const Input = ({ label, onChange, type, className, placeholder }) => {
           onChange={onChange}
           required
         />
-        {label}
       </label>
     );
   }
 
   return (
     <label htmlFor={label}>
-      {label}
-      <input id={label} type="text" className={className} onChange={onChange} />
+      <input
+        id={label}
+        type="text"
+        className={className}
+        placeholder={placeholder}
+        onChange={onChange}
+      />
     </label>
   );
 };
